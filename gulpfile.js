@@ -4,6 +4,7 @@
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
+var cache = require('gulp-cache');
 var reload = browserSync.reload;
 
 gulp.task('styles', function () {
@@ -124,4 +125,8 @@ gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras'], function () 
 
 gulp.task('default', ['clean'], function () {
   gulp.start('build');
+});
+
+gulp.task('clear', function (done) {
+  return cache.clearAll(done);
 });

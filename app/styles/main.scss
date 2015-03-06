@@ -3,6 +3,8 @@ $icon-font-path: '../fonts/';
 // bower:scss
 @import "bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+@import '../fonts/font-awesome-4.3.0/scss/font-awesome.scss';
+@import '_colors';
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -11,83 +13,95 @@ $icon-font-path: '../fonts/';
   padding: 0.2em 0;
 }
 
-/* Space out content a bit */
+html,
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  height: 100%;
+  width: 100%;
+  background: $gray-base;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+.ui-waves-animation-parent {
+  overflow: hidden;
+  position: relative;
+  // height: 400px;
+  background: #51d1ff;
+
+  .ui-waves-animation {
+    // position: relative;
+    // top:25px;
+    // height: 300px;
+
+    .ui-wave-dark,
+    .ui-wave-light {
+      background-size: 70px;
+      background-repeat: repeat-x;
+      height: 100px;
+      position: absolute;
+      width: 200%;
+    }
+
+    .ui-wave-dark {
+      background-image: url(../images/wave-dark.png);
+      left: -50%;
+      bottom: 0px;
+      box-sizing: content-box;
+      border-bottom: 50px solid $blue-wave-dark;
+      -webkit-animation: move-dark-wave 8s infinite ease-in-out; /* Chrome, Safari, Opera */
+      animation: move-dark-wave 8s infinite ease-in-out;
+      -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+      animation-direction: alternate;
+    }
+
+    .ui-wave-light {
+      background-image: url(../images/wave-light.png);
+      left: -47%;
+      bottom: 5px;
+      box-sizing: content-box;
+      border-bottom: 50px solid $blue-wave-light;
+      -webkit-animation: move-light-wave 8s infinite ease-in-out; /* Chrome, Safari, Opera */
+      animation: move-light-wave 8s infinite ease-in-out;
+      -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+      animation-direction: alternate;
+    }
+  }
 }
 
-/* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
-}
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
-
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
+  background: $gray-base;
+
+  ul,
+  li {
+    display: inline-block;
+    margin: 0 50px;
   }
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
-  }
+@-webkit-keyframes move-dark-wave {
+    from {left: -37%;}
+    to {left: -51%;}
+
+    // from {left: -48%;}
+    // to {left: -40%;}
 }
+@keyframes move-dark-wave {
+  from {left: -37%;}
+  to {left: -51%;}
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
+  // from {left: -48%;}
+  // to {left: -40%;}
+}
+@-webkit-keyframes move-light-wave {
+  from {left: -48%;}
+  to {left: -40%;}
 
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
+  // from {left: -37%;}
+  // to {left: -51%;}
+}
+@keyframes move-light-wave {
+  from {left: -48%;}
+  to {left: -40%;}
 
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+  // from {left: -37%;}
+  // to {left: -51%;}
 }
