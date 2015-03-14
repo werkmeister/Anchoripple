@@ -1,0 +1,56 @@
+/***
+HOME
+****/
+.ui-waves-animation-parent {
+  margin-top: 120px;
+  overflow: hidden;
+  position: relative;
+  background: #51d1ff;
+
+  .ui-waves-animation {
+    .jumbotron {
+      color: white;
+      background: none;
+      width: 80%;
+      margin: auto;
+      margin-bottom: 75px;
+    }
+
+    .ui-wave-dark,
+    .ui-wave-light {
+      background-size: 70px;
+      background-repeat: repeat-x;
+      height: 100px;
+      position: absolute;
+      width: 200%;
+    }
+
+    .ui-wave-dark {
+      background-image: url(../images/wave-dark.png);
+      left: -50%;
+      bottom: 0px;
+      box-sizing: content-box;
+      // border-bottom: 50px solid $blue-wave-dark;
+      -webkit-animation: move-dark-wave 8s infinite ease-in-out; /* Chrome, Safari, Opera */
+      animation: move-dark-wave 8s infinite ease-in-out;
+      -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+      animation-direction: alternate;
+    }
+
+    .ui-wave-light {
+      background-image: url(../images/wave-light.png);
+      left: -47%;
+      bottom: 5px;
+      box-sizing: content-box;
+      // border-bottom: 50px solid $blue-wave-light;
+      -webkit-animation: move-light-wave 8s infinite ease-in-out; /* Chrome, Safari, Opera */
+      animation: move-light-wave 8s infinite ease-in-out;
+      -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+      animation-direction: alternate;
+    }
+
+    h1 {
+      text-shadow: 3px 3px $blue-wave-dark;
+    }
+  }
+}

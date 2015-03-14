@@ -1,0 +1,43 @@
+.ui-work-together {
+  background-color: $blue-text;
+  background-image: url(../images/bottom_background.png);
+  background-position: center;
+  color: white;
+  padding: 25px 0;
+
+  h2 {
+    text-decoration: underline;
+    margin-top: 0;
+    font-family: futura-pt-condensed;
+  }
+
+  p {
+    color: white;
+  }
+}
+
+.footer {
+  padding: 10px 0;
+
+  &.row {
+    margin: 0;
+  }
+
+  img {
+    width: 100px;
+    float: left;
+  }
+
+  ul,
+  li {
+    display: inline-block;
+    padding-left: 0;
+  }
+  ul {
+    width: 100%;
+    margin-left: -100px;
+    text-align: center;
+    line-height: 55px;
+    margin-bottom: 0;
+  }
+}

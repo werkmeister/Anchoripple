@@ -1,0 +1,15 @@
+/*******
+DESCRIPTION
+*******/
+.ui-description {
+  background: $gray-light;
+  padding-top: 15px;
+  padding-bottom: 40px;
+
+  &.row {
+    margin: 0;
+  }
+  .ui-description-subtext {
+    margin-bottom: 0;
+  }
+}
