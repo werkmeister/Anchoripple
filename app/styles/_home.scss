@@ -2,12 +2,14 @@
 HOME
 ****/
 .ui-waves-animation-parent {
-  margin-top: 120px;
+  margin-top: 200px;
   overflow: hidden;
   position: relative;
   background: #51d1ff;
 
   .ui-waves-animation {
+    padding-bottom: 45px;
+
     .jumbotron {
       color: white;
       background: none;
@@ -35,6 +37,7 @@ HOME
       animation: move-dark-wave 8s infinite ease-in-out;
       -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
       animation-direction: alternate;
+      border-bottom: 40px solid $blue-wave-dark;
     }
 
     .ui-wave-light {
@@ -47,10 +50,14 @@ HOME
       animation: move-light-wave 8s infinite ease-in-out;
       -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
       animation-direction: alternate;
+      border-bottom: 40px solid #fff;
     }
 
     h1 {
       text-shadow: 3px 3px $blue-wave-dark;
+      font-family: futura-pt-condensed;
+      font-size: 4.5em;
+      margin-top: 0;
     }
   }
 }

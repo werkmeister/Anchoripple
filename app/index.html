@@ -29,81 +29,240 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="container-fluid">
-      <div class="header row">
-        <ul class="">
-          <li class="active"><a href="#">About</a></li>
-          <li><a href="#">Work</a></li>
-        </ul>
-        <img class="logo" src="./images/logo.svg" style="width: 150px;"></h3>
-        <ul class="">
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Get in Touch</a></li>
-        </ul>
+    <div class="header">
+      <ul class="">
+        <li class="active"><a href="#" data-navigate="aboutus">About Us</a></li>
+        <li><a href="#" data-navigate="work">Work</a></li>
+      </ul>
+      <div class="header-img-container">
+        <a href="#" data-navigate="home">
+          <div class="header-img">
+            <div class="front face">
+              <img src="./images/logo.svg"/>
+            </div>
+            <div class="back face">
+              <img src="./images/anchor.svg"/>
+            </div>
+          </div>
+        </a>
       </div>
-
-        <!-- <img src="images/anchor2.svg"> -->
-        <!-- <img src="images/wave.svg"> -->
-      <div class="ui-waves-animation-parent">
-        <div class="ui-waves-animation">
+      <ul class="">
+        <li><a href="#" data-navigate="">Blog</a></li>
+        <li><a href="#" data-navigate="">Get in Touch</a></li>
+      </ul>
+    </div>
+    <div class="container-fluid">
+      <section class="home">
+        <div class="ui-waves-animation-parent">
+          <div class="ui-waves-animation">
             <div class="jumbotron text-center">
-              <h1>EMPOWERING NON-PROFITS TO CHANGE THE WORLD</h1>
+              <h1>EMPOWERING NON-PROFITS<br />TO CHANGE THE WORLD</h1>
+            </div>
+            <div class="ui-wave-light">
+            </div>
+            <div class="ui-wave-dark">
+            </div>
+            <div class="ui-work-button text-center">
+              <a href="#">
+                See Our Work <i class="fa fa-angle-right"></i>
+              </a>
+            </div>
           </div>
-          <div class="ui-wave-light">
+        </div>
+        <div class="ui-description text-center row">
+          <div class="col-xs-12 col-md-10 col-md-offset-1">
+            <h2 class="mission-statement bold">
+              We live in a digital world. Having a strategy to communicate your
+              company's vision in an ever-changing climate can mean the difference
+              between the success and failure of your orgainization
+            </h2>
           </div>
-          <div class="ui-wave-dark">
+          <h2 class="ui-description-subtext col-md-12 col-xs-12">
+            The stakes are high. We can help. Here's how.
+          </h2>
+        </div>
+        <div class="ui-specialties text-center">
+          <div class="row">
+            <div class="col-md-4 col-xs-12">
+              <div class="inner-circle ui-design">
+                <p>Giving your organization a face to meet the digital world</p>
+              </div>
+              <h2 class="bold">DESIGN</h2>
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <div class="inner-circle ui-branding">
+                <p>The emotional response your organization evokes in your donors</p>
+              </div>
+              <h2 class="bold">BRANDING</h2>
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <div class="inner-circle ui-ux">
+                <p>
+                  Where your mission meets your donors passion in an intuitive
+                  and easy way
+                </p>
+              </div>
+              <h2 class="bold">UX</h2>
+            </div>
           </div>
           <div class="ui-work-button text-center">
             <a href="#">
-              See Our Work <i class="fa fa-angle-right"></i>
+              Learn More About Services <i class="fa fa-angle-right"></i>
             </a>
           </div>
         </div>
-      </div>
-      <div class="ui-description text-center row">
-        <div class="col-md-8 col-md-offset-2">
-          <p>We live in a digital world. Having a strategy to communicate your
-            company's vision in an ever-changing climate can mean the difference
-            between the success and failure of your orgainization
+      </section>
+      <section class="aboutus hidden">
+        <div class="jumbotron text-center">
+          <h3>ABOUT ANCHORIPPLE</h3>
+          <h1>HELPING ORGANIZATIONS THAT HELP PEOPLE</h1>
+          <p>
+            Your organization has a story; we want to help you tell it. An
+            organization without a digital strategy is adrift at sea. We use years
+            of industry experience to anchor your non-profit to a digital world.
           </p>
         </div>
-        <p class="ui-description-subtext col-md-12 col-xs-12">
-          The stakes are high. We can help. Here's how.
-        </p>
-      </div>
-      <div class="ui-specialties text-center">
-        <div class="row">
-          <div class="col-md-4 col-xs-12">
-            <!-- <img src="./images/design.png"> -->
-            <div class="stupid-inner-circle ui-design">
-              <p>Giving your organization a face to meet the digital world</p>
-            </div>
-            <h4>DESIGN</h4>
+        <div class="whatwedo row">
+          <div class="header-wave text-center">
+            <h1>WHAT WE DO</h1>
           </div>
-          <div class="col-md-4 col-xs-12">
-            <!-- <img src="./images/branding.png"> -->
-            <div class="stupid-inner-circle ui-branding">
-              <p>The emotional response your organization evokes in your donors</p>
-            </div>
-            <h4>BRANDING</h4>
-          </div>
-          <div class="col-md-4 col-xs-12">
-            <!-- <img src="./images/ux.png"> -->
-            <div class="stupid-inner-circle ui-ux">
-                <p>Where your mission meets your donors passion in an intuitive and easy way</p>
+          <!-- <div class="user-experience"> -->
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <h3>User Experience</h3>
+              <p>
+                User experience (UX) is the way visitors experience your website.
+                At anchoripple we create engaging experiences that bring your
+                mission face to face with donors who can help
+                <br />
+                <h5><strong>We do this in 3 steps.</strong></h5>
+              </p>
+              <div style="padding: 0 20px;">
+                <h4><span class="circle">1</span> Learn</h4>
+                <p>
+                  We learn everything we possibly can about your mission, your donors,
+                  where you've been and where you are going.
+                </p>
+                <h4><span class="circle">2</span> Create</h4>
+                <p>
+                  We create a website that speaks loudly to your cause. An experience
+                  you can be proud of.
+                </p>
+                <h4><span class="circle">3</span> Measure</h4>
+                <p>
+                  Finally, we validate the success of what we built through things
+                  like stakeholder feedback, donor surveys and usability testing.
+                </p>
               </div>
-            <h4>UX</h4>
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <!--picture-->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <!--picture-->
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <h3>Branding</h3>
+              <p>
+                More than just logos and colors, your brand is your identity and
+                gives a voice to your cause. We will help you find your voice. A
+                voice to communicate your mission and the essence of your cause
+                to a digital world.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <h3>Design</h3>
+              <p>
+                Design encompasses everything visual about your organization. Your
+                website is your face to the digital world and should echo your
+                organization's culture, personality, and mission. We help you
+                create beautiful digital representations of your organization that
+                attract donors and volunteers to your cause.
+              </p>
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <!--picture-->
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+        <div class="thebottomline row">
+          <h1 class="col-xs-3 col-xs-offset-3 bold">THE<br />BOTTOM<br />LINE</h1>
+          <p class="col-xs-6">
+            All non-profits and humanitarian organizations are unique and have
+            individual needs. Most people that we work with need a combination
+            of all of our services. We do everything from small tweaks to existing
+            websites to building new sites from the ground up. We work with you to
+            make something beautiful and engagning to tell the world about your
+            cause.
+          </p>
+        </div>
+        <div class="principles row">
+          <div class="col-md-4 col-xs-12">
+            <h3>Be Human</h3>
+            <img/>
+            <p>
+              Our work is only successful if it gives a voice to a human need. We
+              aim to remember who is in need and who can help. We work to connect
+              these two groups in a perfect way.
+            </p>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <h3>Be Solution Driven</h3>
+            <img/>
+            <p>
+              You started your organization because you saw a need and chose to
+              be part of the solution. We help you harnes the power of technology
+              to take your organization further then you could have imagined.
+            </p>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <h3>Be Simple. Be Clear.</h3>
+            <img/>
+            <p>
+              Your website should be laser focused making it easy for users to
+              understand your mission and how they can get involved.
+            </p>
           </div>
         </div>
-        <div class="ui-work-button text-center">
-          <a href="#">
-            Learn More About Services <i class="fa fa-angle-right"></i>
-          </a>
+        <div class="meettheteam row text-center">
+          <div class="header-wave">
+            <h1>MEET THE TEAM</h1>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <h3 class="bold">STEVE LAMB</h3>
+            <p>Founder, Creative Director</p>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <h3 class="bold">LAVASHA KOTTWITZ</h3>
+            <p>Project Manager</p>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <h3 class="bold">LANDON BRADFORD</h3>
+            <p>Strategic Planning</p>
+          </div>
+          <div class="col-md-4 col-xs-12 col-md-offset-2">
+            <h3 class="bold">JOSH WERKMEISTER</h3>
+            <p>Web Developer</p>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <h3 class="bold">ADAM THOMPSON</h3>
+            <p>Operation Manager</p>
+          </div>
         </div>
-      </div>
+      </section>
       <div class="ui-work-together text-center">
-        <h2>LETS WORK TOGETHER</h2>
-        <p>If we believe in your cause then we will work for next to nothing, pro-bono when possible.</p>
+        <div class="header-wave">
+          <h1>LETS WORK TOGETHER</h1>
+        </div>
+        <h2 class="col-xs-12">
+          If we believe in your cause then we will work for next to nothing,
+          pro-bono when possible.
+        </h2>
         <div class="ui-work-button text-center">
           <a href="#">
             Get in Touch <i class="fa fa-angle-right"></i>
@@ -113,14 +272,13 @@
       <div class="footer row">
           <img src="./images/logo.svg">
           <ul>
-            <li><a href="#">About</a></li>
+            <li><a href="#" data-navigate="aboutus">About</a></li>
             <li><a href="#">Work</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Get in Touch</a></li>
           </ul>
       </div>
     </div>
-
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -155,5 +313,5 @@
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
-</body>
+  </body>
 </html>

@@ -9,7 +9,13 @@ DESCRIPTION
   &.row {
     margin: 0;
   }
+
   .ui-description-subtext {
-    margin-bottom: 0;
+    color: $blue-text;
+  }
+
+  .mission-statement {
+    color: $blue-text;
+    line-height: 1.5em;
   }
 }

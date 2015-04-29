@@ -5,9 +5,12 @@ $icon-font-path: '../fonts/';
 // endbower
 @import '../fonts/font-awesome-4.3.0/scss/font-awesome.scss';
 
-@import 'components/button';
-
 @import 'colors';
+
+@import 'components/button';
+@import 'components/headerwave';
+
+@import 'aboutus';
 @import 'description';
 @import 'header';
 @import 'home';
@@ -27,15 +30,28 @@ body {
   width: 100%;
   background: $gray-base;
   font-family: Futura-PT;
+  font-size: 16px;
   // font-family: Futura-PT-Condensed;
 
-  h4 {
-    color: $blue-text;
+  h1 {
+    font-size: 3em;
   }
 
-  p {
-    color: $blue-text;
+  h2 {
+    // font-size: 2em;
   }
+
+  h3 {
+    font-size: 1.75em;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+}
+
+.container-fluid {
+  max-width: 1300px;
 }
 
 /**********
@@ -44,28 +60,19 @@ ANIMATIONS
 @-webkit-keyframes move-dark-wave {
     from {left: -37%;}
     to {left: -51%;}
-
-    // from {left: -48%;}
-    // to {left: -40%;}
 }
+
 @keyframes move-dark-wave {
   from {left: -37%;}
   to {left: -51%;}
-
-  // from {left: -48%;}
-  // to {left: -40%;}
 }
+
 @-webkit-keyframes move-light-wave {
   from {left: -48%;}
   to {left: -40%;}
-
-  // from {left: -37%;}
-  // to {left: -51%;}
 }
+
 @keyframes move-light-wave {
   from {left: -48%;}
   to {left: -40%;}
-
-  // from {left: -37%;}
-  // to {left: -51%;}
 }

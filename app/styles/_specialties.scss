@@ -4,23 +4,38 @@ SPECIALTIES
 .ui-specialties {
   background: white;
   padding: 15px 0;
+  padding-bottom: 40px;
+
+  h2 {
+    color: $blue-text;
+  }
 
   .col-md-4,
   .col-xs-12 {
     position: relative;
   }
 
-  .stupid-inner-circle {
+  .col-xs-12 {
+    margin-bottom: 30px;
+  }
+
+  .ui-work-button {
+    margin-top: 35px;
+  }
+
+  .inner-circle {
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 99%;
     height: 220px;
     width: 220px;
     margin: auto;
     border-radius: 50%;
-    box-sizing: content-box;
-    // border: 15px solid white;
+    box-sizing: border-box;
     position: relative;
     top: -25px;
+    box-shadow:
+      inset 0 0 0 15px rgba(255,255,255, 1);
 
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
