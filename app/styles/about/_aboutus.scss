@@ -1,0 +1,53 @@
+section.aboutus {
+  > div {
+    padding: 0 85px;
+  }
+
+  .jumbotron {
+    margin-top: 200px;
+    height: 420px;
+    margin-bottom: 0;
+  }
+
+  .whatwedo {
+    background: $gray-light;
+    margin: 0;
+  }
+
+  .thebottomline {
+    background: $blue-text;
+    margin: 0;
+    border-bottom: 0;
+    border-top: 5px solid transparent;
+    -webkit-border-image: url(../images/ripple.svg) 5 round; /* Safari 3.1-5 */
+    -o-border-image: url(../images/ripple.svg) 5 round; /* Opera 11-12.1 */
+    border-image: url(../images/ripple.svg) 5 round;
+  }
+
+  .principles {
+    background: $white;
+    margin: 0;
+  }
+
+  .meettheteam {
+    margin: 0;
+    background: $blue-wave-light;
+
+    h3 {
+      font-family: Futura-PT-Condensed;
+    }
+  }
+
+
+  h4 {
+    span.circle {
+      color: white;
+      background: $blue-wave-light;
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      text-align: center;
+      border-radius: 50%
+    }
+  }
+}

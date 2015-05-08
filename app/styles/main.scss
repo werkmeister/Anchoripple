@@ -4,17 +4,20 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 @import '../fonts/font-awesome-4.3.0/scss/font-awesome.scss';
-
+// colors - must be first
 @import 'colors';
 
+@import 'about/aboutus';
+
 @import 'components/button';
+@import 'components/header';
 @import 'components/headerwave';
 
-@import 'aboutus';
-@import 'description';
-@import 'header';
-@import 'home';
-@import 'specialties';
+@import 'home/description';
+@import 'home/home';
+@import 'home/specialties';
+
+@import 'work/work';
 @import 'worktogether';
 
 .browserupgrade {
@@ -31,18 +34,62 @@ body {
   background: $gray-base;
   font-family: Futura-PT;
   font-size: 16px;
-  // font-family: Futura-PT-Condensed;
 
   h1 {
-    font-size: 3em;
+    font-size: 3em; // 48px
   }
 
   h2 {
-    // font-size: 2em;
+    // font-size: 2em; // 30px
   }
 
   h3 {
-    font-size: 1.75em;
+    font-size: 1.75em; // 28px
+  }
+
+  h4 {
+    font-size: 1.5em; // 24px
+  }
+
+  h5 {
+    font-size: 1.25em;
+  }
+
+  h6 {
+    font-size: .875em; // 14px
+  }
+  // TODO: clean it up
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $blue-text;
+
+    &.white {
+      color: $white;
+    }
+
+    &.gray-base {
+      color: $gray-base;
+    }
+
+    &.blue-sky {
+      color: $blue-text-sky;
+    }
+  }
+
+  p {
+    &.white {
+      color: $white;
+    }
+
+    &.gray {
+      color: $gray-text;
+    }
+
+    &.gray-base {
+      color: $gray-base;
+    }
   }
 
   .bold {
@@ -54,9 +101,9 @@ body {
   max-width: 1300px;
 }
 
-/**********
-ANIMATIONS
-**********/
+/**************
+WAVE ANIMATIONS
+**************/
 @-webkit-keyframes move-dark-wave {
     from {left: -37%;}
     to {left: -51%;}

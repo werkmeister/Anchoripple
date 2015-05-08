@@ -4,8 +4,8 @@ div.header-wave {
     border-top: 0;
     border-bottom: 5px solid transparent;
     display: inline-block;
-    -webkit-border-image: url(../../images/ripple.svg) 5 round; /* Safari 3.1-5 */
-    -o-border-image: url(../../images/ripple.svg) 5 round; /* Opera 11-12.1 */
-    border-image: url(../../images/ripple.svg) 5 round;
+    -webkit-border-image: url(../images/ripple.svg) 5 round; /* Safari 3.1-5 */
+    -o-border-image: url(../images/ripple.svg) 5 round; /* Opera 11-12.1 */
+    border-image: url(../images/ripple.svg) 5 round;
   }
 }

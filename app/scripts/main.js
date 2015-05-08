@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 function navResize( offset, flip ) {
   var height = 200 - (offset);
@@ -29,8 +29,7 @@ function headerScroll() {
   }
 }
 
-
-function navigate( e ) {
+function navigate() {
   // e.stopPropagation();
   // e.preventDefault();
   $('section').addClass('hidden');

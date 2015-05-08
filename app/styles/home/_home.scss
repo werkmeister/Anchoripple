@@ -5,13 +5,12 @@ HOME
   margin-top: 200px;
   overflow: hidden;
   position: relative;
-  background: #51d1ff;
+  background: $blue-light;
 
   .ui-waves-animation {
     padding-bottom: 45px;
 
     .jumbotron {
-      color: white;
       background: none;
       width: 80%;
       margin: auto;
@@ -32,7 +31,6 @@ HOME
       left: -50%;
       bottom: 0px;
       box-sizing: content-box;
-      // border-bottom: 50px solid $blue-wave-dark;
       -webkit-animation: move-dark-wave 8s infinite ease-in-out; /* Chrome, Safari, Opera */
       animation: move-dark-wave 8s infinite ease-in-out;
       -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
@@ -45,12 +43,11 @@ HOME
       left: -47%;
       bottom: 5px;
       box-sizing: content-box;
-      // border-bottom: 50px solid $blue-wave-light;
       -webkit-animation: move-light-wave 8s infinite ease-in-out; /* Chrome, Safari, Opera */
       animation: move-light-wave 8s infinite ease-in-out;
       -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
       animation-direction: alternate;
-      border-bottom: 40px solid #fff;
+      border-bottom: 40px solid $white;
     }
 
     h1 {
