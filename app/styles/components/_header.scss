@@ -43,6 +43,10 @@ HEADER
 
     .face.back {
       transform: rotateY(180deg);
+
+      img {
+        max-width: 30px !important
+      }
     }
   }
 

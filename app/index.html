@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Anchoripple</title>
+    <link rel="shortcut icon" href="http://anchoripple.org/josh/beta/favicon.ico">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css styles/vendor.css -->
@@ -52,6 +53,7 @@
       </ul>
     </div>
     <div class="container-fluid">
+<!-- HOME -->
       <section class="home">
         <div class="ui-waves-animation-parent">
           <div class="ui-waves-animation">
@@ -63,7 +65,7 @@
             <div class="ui-wave-dark">
             </div>
             <div class="ui-work-button text-center">
-              <a href="#">
+              <a href="#" data-navigate="work">
                 See Our Work <i class="fa fa-angle-right"></i>
               </a>
             </div>
@@ -106,29 +108,34 @@
             </div>
           </div>
           <div class="ui-work-button text-center">
-            <a href="#">
+            <a href="#" data-navigate="aboutus">
               Learn More About Services <i class="fa fa-angle-right"></i>
             </a>
           </div>
         </div>
       </section>
+<!-- ABOUT US -->
       <section class="aboutus hidden">
+        <!-- JUMBO -->
         <div class="jumbotron text-center">
-          <h3>ABOUT ANCHORIPPLE</h3>
-          <h1>HELPING ORGANIZATIONS THAT HELP PEOPLE</h1>
-          <p>
+          <h4 class="gray-base">ABOUT ANCHORIPPLE</h4>
+          <div class="header-wave">
+            <h1 class="white">HELPING ORGANIZATIONS THAT HELP PEOPLE</h1>
+          </div>
+          <h4 class="white">
             Your organization has a story; we want to help you tell it. An
             organization without a digital strategy is adrift at sea. We use years
             of industry experience to anchor your non-profit to a digital world.
-          </p>
+          </h4>
         </div>
+        <!-- WHAT WE DO -->
         <div class="whatwedo row">
           <div class="header-wave text-center">
             <h1>WHAT WE DO</h1>
           </div>
           <!-- <div class="user-experience"> -->
           <div class="row">
-            <div class="col-md-6 col-xs-12">
+            <div class="col-md-7 col-xs-12">
               <h2>User Experience</h2>
               <p>
                 User experience (UX) is the way visitors experience your website.
@@ -155,15 +162,15 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-6 col-xs-12">
+            <div class="col-md-5 col-xs-12">
               <!--picture-->
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 col-xs-12">
+            <div class="col-md-5 col-xs-12">
               <!--picture-->
             </div>
-            <div class="col-md-6 col-xs-12">
+            <div class="col-md-7 col-xs-12">
               <h2>Branding</h2>
               <p>
                 More than just logos and colors, your brand is your identity and
@@ -174,7 +181,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 col-xs-12">
+            <div class="col-md-7 col-xs-12">
               <h2>Design</h2>
               <p>
                 Design encompasses everything visual about your organization. Your
@@ -184,17 +191,18 @@
                 attract donors and volunteers to your cause.
               </p>
             </div>
-            <div class="col-md-6 col-xs-12">
+            <div class="col-md-5 col-xs-12">
               <!--picture-->
             </div>
           </div>
           <!-- </div> -->
         </div>
+        <!-- BOTTOM LINE -->
         <div class="thebottomline row">
           <h1 class="col-xs-3 col-xs-offset-3 bold blue-sky">
             THE<br />BOTTOM<br />LINE
           </h1>
-          <p class="col-xs-6 white">
+          <p class="col-xs-6 white" style="padding-top: 25px;">
             All non-profits and humanitarian organizations are unique and have
             individual needs. Most people that we work with need a combination
             of all of our services. We do everything from small tweaks to existing
@@ -203,10 +211,17 @@
             cause.
           </p>
         </div>
+        <!-- PRINCIPLES -->
         <div class="principles row">
           <div class="col-md-4 col-xs-12">
-            <h2>Be Human</h2>
-            <img/>
+            <h2 class="text-center">Be Human</h2>
+            <!-- TODO: clean up -->
+            <div
+              class="text-center"
+              style="height: 250px"
+            >
+              <img class="animation" src="./images/heart.svg"/>
+            </div>
             <p class="gray">
               Our work is only successful if it gives a voice to a human need. We
               aim to remember who is in need and who can help. We work to connect
@@ -214,8 +229,13 @@
             </p>
           </div>
           <div class="col-md-4 col-xs-12">
-            <h2>Be Solution Driven</h2>
-            <img/>
+            <h2 class="text-center">Be Solution Driven</h2>
+            <div
+              class="text-center"
+              style="height: 250px"
+            >
+              <img class="animation" src="./images/graph.svg"/>
+            </div>
             <p class="gray">
               You started your organization because you saw a need and chose to
               be part of the solution. We help you harnes the power of technology
@@ -223,8 +243,13 @@
             </p>
           </div>
           <div class="col-md-4 col-xs-12">
-            <h2>Be Simple. Be Clear.</h2>
-            <img/>
+            <h2 class="text-center">Be Simple. Be Clear.</h2>
+            <div
+              class="text-center"
+              style="height: 250px"
+            >
+              <img class="animation" src="./images/focus.png"/>
+            </div>
             <p class="gray">
               Your website should be laser focused making it easy for users to
               understand your mission and how they can get involved.
@@ -232,7 +257,7 @@
           </div>
         </div>
         <div class="meettheteam row text-center">
-          <div class="header-wave">
+          <div class="header-wave dark">
             <h1 class="white">MEET THE TEAM</h1>
           </div>
           <div class="col-md-4 col-xs-12">
@@ -257,8 +282,12 @@
           </div>
         </div>
       </section>
+<!-- WORK -->
       <section class="work hidden">
         <div class="jumbotron text-center">
+          <h1 class="bold white">
+            STUFF ANCHORIPPLE HAS MADE
+          </h1>
         </div>
         <div class="projects">
           <div class="header-wave text-center">
@@ -282,6 +311,7 @@
           </a>
         </div>
       </div>
+<!-- FOOTER -->
       <div class="footer row">
           <img src="./images/logo.svg">
           <ul>

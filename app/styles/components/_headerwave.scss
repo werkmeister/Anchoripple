@@ -8,4 +8,11 @@ div.header-wave {
     -o-border-image: url(../images/ripple.svg) 5 round; /* Opera 11-12.1 */
     border-image: url(../images/ripple.svg) 5 round;
   }
+  &.dark {
+    h1 {
+      -webkit-border-image: url(../images/rippledark.svg) 5 round; /* Safari 3.1-5 */
+      -o-border-image: url(../images/rippledark.svg) 5 round; /* Opera 11-12.1 */
+      border-image: url(../images/rippledark.svg) 5 round;
+    }
+  }
 }

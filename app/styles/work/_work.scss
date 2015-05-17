@@ -1,7 +1,22 @@
 section.work {
   .jumbotron {
     margin-top: 200px;
-    height: 420px;
+    height: 460px;
     margin-bottom: 0;
+    background-image: url('../images/work.jpg');
+    // background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 10px;
+
+    h1 {
+      font-size: 40px;
+      margin-top: 15px
+    }
   }
 }
