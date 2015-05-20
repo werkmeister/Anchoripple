@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 
 function navResize( offset, flip ) {
   var height = 200 - (offset);
@@ -6,10 +6,10 @@ function navResize( offset, flip ) {
   var margin = -132 + (offset * 0.875);
   var top = 80 - (offset * 0.4);
 
-    $('.header').css({
+    $('.header.full').css({
       'height': height + 'px',
     });
-    $('.header ul').css('top', top + 'px');
+    $('.header.full ul').css('top', top + 'px');
     $('.header-img').css({
       'margin-left': margin,
       'width': imgWidth
@@ -29,16 +29,20 @@ function headerScroll() {
   }
 }
 
-function navigate() {
-  // e.stopPropagation();
-  // e.preventDefault();
-  $('section').addClass('hidden');
+// function navigate() {
+//   // e.stopPropagation();
+//   // e.preventDefault();
+//   $('section').addClass('hidden');
+//
+//   $('section.' + this.dataset.navigate).toggleClass('hidden');
+// }
 
-  $('section.' + this.dataset.navigate).toggleClass('hidden');
-}
+// $('a').on('click', navigate);
 
-$('a').on('click', navigate);
-
+$('.fa-bars').on('click', function() {
+  $('.header.small').toggleClass('open');
+  $('.header.small ul').toggleClass('hidden');
+})
 window.onload = headerScroll();
 
 $(window).on('scroll', function() {

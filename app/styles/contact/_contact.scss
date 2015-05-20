@@ -1,0 +1,18 @@
+section.contact {
+  background: $white;
+
+  input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    &[type="text"] {
+      background: $gray-base;
+      height: 70px;
+      border: 0;
+    }
+
+    textarea {
+      background: $gray-base;
+    }
+  }
+}

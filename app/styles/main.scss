@@ -13,6 +13,8 @@ $icon-font-path: '../fonts/';
 @import 'components/header';
 @import 'components/headerwave';
 
+@import 'contact/contact';
+
 @import 'home/description';
 @import 'home/home';
 @import 'home/specialties';
@@ -73,8 +75,15 @@ body {
       color: $gray-base;
     }
 
+    &.gray {
+      color: $gray-text;
+    }
+
     &.blue-sky {
       color: $blue-text-sky;
+    }
+    &.blue-wave-light {
+      color: $blue-wave-light;
     }
   }
 
@@ -123,12 +132,3 @@ WAVE ANIMATIONS
   from {left: -48%;}
   to {left: -40%;}
 }
-
-// @-webkit-keyframes heartbeat {
-//     from {height: 200px;}
-//     to {height: 220px;}
-// }
-// @keyframes heartbeat {
-//   from {height: 200px;}
-//   to {height: 220px;}
-// }
