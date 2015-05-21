@@ -131,7 +131,9 @@ HEADER
 
 @media (max-width: 820px) {
   .ui-waves-animation-parent,
-  section.aboutus .jumbotron  {
+  section.aboutus > .jumbotron,
+  section.work > .jumbotron,
+  section.contact {
     margin-top: 68px !important;
   }
 
