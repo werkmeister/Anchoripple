@@ -2,9 +2,8 @@
 	position: relative;
 	z-index: 1;
 	display: inline-block;
-	margin: 1em;
-	max-width: 350px;
-	width: calc(100% - 2em);
+	margin: 0 15px;
+	width: calc(100% - 30px);
 	vertical-align: top;
 }
 
@@ -34,7 +33,7 @@
 	width: 40%;
 	color: #696969;
 	font-weight: bold;
-	font-size: 70.25%;
+	font-size: 1.5em;
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 	-webkit-touch-callout: none;
@@ -66,7 +65,6 @@
 
 .input--kozakura {
 	overflow: hidden;
-	padding-bottom: 1em;
 }
 
 .input__field--kozakura {
@@ -77,13 +75,14 @@
 	color: #2F3238;
 	font-size: 1.55em;
 	opacity: 0;
+	height: 75px;
 }
 
 .input__label--kozakura {
 	width: 100%;
 	text-align: left;
 	position: absolute;
-	top: 1em;
+	top: -1em;
 	pointer-events: none;
 	overflow: hidden;
 	padding: 0 0.25em;
@@ -110,6 +109,7 @@
 	width: 100%;
 	color: $blue-text;
 	padding: 0.25em 0;
+	// padding: 0;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 0.85em;
@@ -120,7 +120,8 @@
 	pointer-events: none;
 	top: 1em;
 	bottom: 0px;
-	height: 4.5em;
+	// height: 4.5em;
+	height: 104px;
 	z-index: -1;
 	-webkit-transition: -webkit-transform 0.7s, fill 0.7s;
 	transition: transform 0.7s, fill 0.7s;
@@ -147,8 +148,8 @@
 .input--filled .input__label-content--kozakura {
 	-webkit-transition-delay: 0.15s;
 	transition-delay: 0.15s;
-	-webkit-transform: translate3d(0, -100%, 0);
-	transform: translate3d(0, -100%, 0);
+	-webkit-transform: translate3d(0, -55%, 0);
+	transform: translate3d(0, -55%, 0);
 }
 
 .input__field--kozakura:focus ~ .graphic--kozakura,
