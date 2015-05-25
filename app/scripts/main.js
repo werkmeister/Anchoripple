@@ -29,16 +29,6 @@ function headerScroll() {
   }
 }
 
-// function navigate() {
-//   // e.stopPropagation();
-//   // e.preventDefault();
-//   $('section').addClass('hidden');
-//
-//   $('section.' + this.dataset.navigate).toggleClass('hidden');
-// }
-
-// $('a').on('click', navigate);
-
 $('.fa-bars').on('click', function() {
   $('.header.small').toggleClass('open');
   $('.header.small ul').toggleClass('hidden');
@@ -64,8 +54,8 @@ jQuery(document).ready(function($){
 	});
 	$('.cd-gallery').on('click', function(event){
 		/* detect click on .cd-gallery::before when the .cd-folding-panel is open */
-		if($(event.target).is('.cd-gallery') && $('.fold-is-open').length > 0 ) toggleContent('', false);
-	})
+		if($(event.target).is('.cd-gallery') && $('.fold-is-open').length > 0 ) {toggleContent('', false);}
+	});
 
 	function openItemInfo(url) {
 		var mq = viewportSize();
@@ -86,7 +76,7 @@ jQuery(document).ready(function($){
 		if( bool ) {
 			/* load and show new content */
 			var foldingContent = $('.cd-fold-content');
-			foldingContent.load(url+' .cd-fold-content > *', function(event){
+			foldingContent.load(url+' .cd-fold-content > *', function(){
 				setTimeout(function(){
 					$('body').addClass('overflow-hidden');
 					$('.cd-folding-panel').addClass('is-open');
@@ -100,14 +90,10 @@ jQuery(document).ready(function($){
 			$('.cd-folding-panel').removeClass('is-open');
 			$('.cd-main').removeClass('fold-is-open');
 
-			(mq === 'mobile' || $('.no-csstransitions').length > 0 )
-				/* according to the mq, immediately remove the .overflow-hidden or wait for the end of the animation */
-				? $('body').removeClass('overflow-hidden')
-
-				: $('.cd-main').find('.cd-item').eq(0).one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+			(mq === 'mobile' || $('.no-csstransitions').length > 0 ) ? $('body').removeClass('overflow-hidden') : $('.cd-main').find('.cd-item').eq(0).one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
 					$('body').removeClass('overflow-hidden');
 					$('.cd-main').find('.cd-item').eq(0).off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend');
-				});
+				});// jshint ignore: line
 		}
 
 	}
@@ -123,12 +109,10 @@ jQuery(document).ready(function($){
 
 ( function( window ) {
 
-'use strict';
-
 // class helper functions from bonzo https://github.com/ded/bonzo
 
 function classReg( className ) {
-  return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+  return new RegExp('(^|\\s+)' + className + '(\\s+|$)');
 }
 
 // classList support for class management
@@ -178,6 +162,7 @@ var classie = {
   toggle: toggleClass
 };
 
+var define;
 // transport
 if ( typeof define === 'function' && define.amd ) {
   // AMD

@@ -2,17 +2,52 @@ section.contact {
   background: $white;
 
   input {
-    // margin-top: 20px;
-    // margin-bottom: 20px;
+    &[type="submit"] {
+      background: $pink-action;
+      border: 0;
+      box-shadow: 0;
+      color: white;
+      font-size: 24px;
+      padding: 20px 24px;
+      margin: 15px;
+      font-weight: bold;
 
-    &[type="text"] {
-      // background: $gray-base;
-      // height: 70px;
-      // border: 0;
+      &:hover {
+        background: #E25A7B;
+      }
+    }
+  }
+
+  textarea {
+    background: $gray-base;
+    height: 200px;
+    opacity: 1;
+  }
+
+  div.text-center {
+    padding-top: 90px;
+  }
+
+  h4 {
+    margin: 0;
+  }
+
+  .contact-information {
+    background: $blue-wave-light;
+    margin-top: 31px;
+    // margin-right: 30px;
+
+    i {
+      color: $blue-text;
     }
 
-    textarea {
-      // background: $gray-base;
+    p {
+      margin: 0;
+      padding: 30px 10px;
+    }
+
+    p:last-of-type {
+      padding-top: 0;
     }
   }
 }

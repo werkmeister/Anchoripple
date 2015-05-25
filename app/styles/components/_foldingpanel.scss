@@ -4,6 +4,10 @@
 Main content
 
 -------------------------------- */
+body.overflow-hidden {
+  overflow: hidden; // prevent scroll
+}
+
 .cd-main {
   overflow-x: hidden;
 }
@@ -135,11 +139,11 @@ ul.cd-gallery {
   background-color: #65d29b;
 }
 .cd-item h2 {
-  font-size: 2.2rem;
+  // font-size: 2.2rem;
 }
 .cd-item p {
   line-height: 1.2;
-  font-size: 1.4rem;
+  // font-size: 1.4rem;
   opacity: 0.6;
   padding: 1em 0;
 }
@@ -163,10 +167,10 @@ ul.cd-gallery {
     transition: transform 0.5s 0.4s;
   }
   .cd-item h2 {
-    font-size: 3rem;
+    // font-size: 3rem;
   }
   .cd-item p {
-    font-size: 1.6rem;
+    // font-size: 1.6rem;
   }
   .cd-item h2, .cd-item p {
     -webkit-transform: translateY(30px);
@@ -446,7 +450,7 @@ folding panel
   left: 0;
   height: 100%;
   width: 100%;
-  padding: 4em 2em;
+  // padding: 4em 2em;
   visibility: hidden;
   -webkit-transition: visibility 0s 0.4s;
   -moz-transition: visibility 0s 0.4s;
@@ -461,7 +465,7 @@ folding panel
   transform: translateY(20px);
 }
 .cd-fold-content h2 {
-  font-size: 2.4rem;
+  // font-size: 2.4rem;
   -webkit-transition: -webkit-transform 0.2s 0.2s, opacity 0.2s 0.2s;
   -moz-transition: -moz-transform 0.2s 0.2s, opacity 0.2s 0.2s;
   transition: transform 0.2s 0.2s, opacity 0.2s 0.2s;
@@ -481,7 +485,7 @@ folding panel
 }
 .cd-fold-content p {
   margin-bottom: 1em;
-  font-size: 1.4rem;
+  // font-size: 1.4rem;
   -webkit-transition: -webkit-transform 0.2s 0s, opacity 0.2s 0s;
   -moz-transition: -moz-transform 0.2s 0s, opacity 0.2s 0s;
   transition: transform 0.2s 0s, opacity 0.2s 0s;
@@ -519,12 +523,12 @@ folding panel
 }
 @media only screen and (min-width: 820px) {
   .cd-fold-content h2 {
-    font-size: 3.2rem;
+    // font-size: 3.2rem;
   }
 }
 @media only screen and (min-width: 820px) {
   .cd-fold-content {
-    padding: 4em;
+    // padding: 4em;
   }
   .cd-fold-content > * {
     -webkit-transform: translateY(40px);
@@ -537,7 +541,7 @@ folding panel
     font-size: 2.2rem;
   }
   .cd-fold-content p {
-    font-size: 1.6rem;
+    // font-size: 1.6rem;
   }
 }
 

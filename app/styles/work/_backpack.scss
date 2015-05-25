@@ -1,0 +1,58 @@
+.cd-fold-content{
+  div.backpack {
+    img {
+      width: 100%;
+    }
+
+    h1,
+    h4,
+    h5 {
+      margin: 0;
+      color: $gray-dark;
+    }
+
+    h4 {
+      padding: 20px 0;
+    }
+    h5 {
+      padding-top: 70px;
+    }
+    section {
+      padding: 4em;
+
+      &.introduction {
+        position: relative;
+        top: -175px;
+        margin-bottom: -175px;
+        padding-top: 0;
+
+        img {
+          width: 75%;
+        }
+      }
+      &.description {
+        background: #60B6D2;
+      }
+
+      &.volunteer {
+        background: #8EE3E9;
+      }
+
+      &.beginnings {
+        background: #F5A35F;
+
+        img {
+          border-radius: 42px;
+        }
+      }
+
+      &.contact {
+        background: #3E789F;
+      }
+
+      &:last-of-type {
+        margin-bottom: 4em;
+      }
+    }
+  }
+}

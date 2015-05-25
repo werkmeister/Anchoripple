@@ -21,6 +21,7 @@ $icon-font-path: '../fonts/';
 @import 'home/home';
 @import 'home/specialties';
 
+@import 'work/backpack';
 @import 'work/work';
 @import 'worktogether';
 
@@ -101,10 +102,20 @@ body {
     &.gray-base {
       color: $gray-base;
     }
+
+    i {
+      &.blue-text {
+        color: $blue-text;
+      }
+    }
   }
 
   .bold {
     font-weight: bold;
+  }
+
+  .required {
+    color: $pink-action;
   }
 }
 
