@@ -1,0 +1,51 @@
+.cd-fold-content{
+  div.charitagoal {
+    h1,
+    h4,
+    h5 {
+      margin: 0;
+      color: $gray-dark;
+    }
+
+    h4 {
+      padding: 20px 0;
+    }
+    h5 {
+      padding-top: 70px;
+    }
+    section {
+      padding: 4em;
+
+      &.introduction {
+        position: relative;
+        top: -175px;
+        margin-bottom: -175px;
+        padding-top: 0;
+      }
+      &.main {
+        background: #89D3EC;
+
+        img {
+          width: 49%;
+        }
+      }
+      &.cash {
+        background: #F7F7F7;
+
+        img {
+          width: 32%;
+        }
+      }
+      &.time {
+        background: #346778;
+
+        img {
+          width: 32%;
+        }
+      }
+      &:last-of-type {
+        margin-bottom: 4em;
+      }
+    }
+  }
+}

@@ -113,8 +113,20 @@ ul.cd-gallery {
   width: 100%;
   overflow: hidden;
   color: #ffffff;
+  background-color: rgba(1,117,159, 0.6);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s 0.1s;
+
+  img {
+    display: block;
+    margin: auto;
+  }
+
+  &:hover {
+    background-color: rgba(1,117,159,0.9);
+
+  }
 }
 .cd-item > a.dark-text {
   color: #363558;
@@ -130,7 +142,10 @@ ul.cd-gallery {
   background-color: #363558;
 }
 .cd-item:nth-of-type(2) {
-  background-color: #544173;
+  background-image: url(../../images/charitagoal/cg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .cd-item:nth-of-type(3) {
   background-color: #dadcdc;
@@ -172,7 +187,7 @@ ul.cd-gallery {
   .cd-item p {
     // font-size: 1.6rem;
   }
-  .cd-item h2, .cd-item p {
+  .cd-item h2, .cd-item p, .cd-item img {
     -webkit-transform: translateY(30px);
     -moz-transform: translateY(30px);
     -ms-transform: translateY(30px);
@@ -193,7 +208,8 @@ ul.cd-gallery {
     -moz-transition: opacity 0.3s 0s, -moz-transform 0.3s 0s;
     transition: opacity 0.3s 0s, transform 0.3s 0s;
   }
-  .no-touch .cd-item a:hover h2, .no-touch .cd-item a:hover p {
+  .no-touch .cd-item a:hover h2, .no-touch .cd-item a:hover p, .no-touch .cd-item a:hover img {
+    -webkit-transform: translateY(0);
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
