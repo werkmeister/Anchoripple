@@ -113,7 +113,7 @@ ul.cd-gallery {
   width: 100%;
   overflow: hidden;
   color: #ffffff;
-  background-color: rgba(1,117,159, 0.6);
+  background-color: rgba(1,117,159, 0.3);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: background-color 0.3s 0.1s;
@@ -125,7 +125,7 @@ ul.cd-gallery {
 
   &:hover {
     background-color: rgba(1,117,159,0.9);
-
+    cursor: default;
   }
 }
 .cd-item > a.dark-text {
@@ -139,10 +139,13 @@ ul.cd-gallery {
   vertical-align: middle;
 }
 .cd-item:nth-of-type(1) {
-  background-color: #363558;
+  background-image: url(../images/backpack/pb.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .cd-item:nth-of-type(2) {
-  background-image: url(../../images/charitagoal/cg.png);
+  background-image: url(../images/charitagoal/cg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -168,9 +171,15 @@ ul.cd-gallery {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding: 1em 1.3em;
-  border-radius: 50em;
+  padding: 10px;
+  margin-top: 20px;
   border: 1px solid #ffffff;
+
+  &:hover {
+    background-color: white;
+    cursor: pointer;
+    color:  rgba(1,117,159,0.9);
+  }
 }
 @media only screen and (min-width: 820px) {
   .cd-item {

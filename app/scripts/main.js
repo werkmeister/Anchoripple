@@ -6,10 +6,10 @@ function navResize(offset, flip) {
   var margin = -132 + (offset * 0.875);
   var top = 80 - (offset * 0.4);
 
-  $('.header.full').css({
-    'height': height + 'px',
-  });
+  $('.header.full').css('height', height + 'px');
+
   $('.header.full ul').css('top', top + 'px');
+
   $('.header-img').css({
     'margin-left': margin,
     'width': imgWidth
@@ -29,6 +29,7 @@ function headerScroll() {
   }
 }
 
+
 $('.fa-bars').on('click', function() {
   $('.header.small').toggleClass('open');
   $('.header.small ul').toggleClass('hidden');
@@ -40,6 +41,22 @@ $(window).on('scroll', function() {
   headerScroll();
 });
 
+$('form').submit(function( e ) {
+  e.preventDefault();
+  e.stopPropagation();
+
+// TODO: make this awesome
+  var email = {
+    'name': $('input[name=name]').val(),
+    'email': $('input[name=email]').val(),
+    'organization': $('input[name=organization]').val(),
+    'message': $('textarea[name=message]').val()
+  };
+
+  $.post('contact.php', email, function( response ) {
+    console.log(response);
+  });
+});
 /************
 // FOLD PANEL : AUTHOR Sebastiano Guerriero http://codyhouse.co/gem/3d-folding-panel/
 ************/
