@@ -73,63 +73,28 @@
           <h4 class="gray">We want to talk to you and stuff.</h4>
         </div>
         <div class="row">
-          <form  class="col-xs-12 col-md-6 col-md-offset-1 text-center" method="POST" action="contact.php">
-          <!-- <form  class="col-xs-12 col-md-6 col-md-offset-1 text-center"> -->
-            <input class="" type="text" id="input-7" name="name"/>
-            <input class="" type="text" id="input-7" name="email"/>
-            <input class="" type="text" id="input-7" name="organization"/>
-            <textarea class="" type="text" id="input-7" name="message"></textarea>
 
-            <!-- <span class="input input--kozakura">
-            <input class="input__field input__field--kozakura" type="text" id="input-7" name="name"/>
-            <label class="input__label input__label--kozakura" for="input-7">
-            <span class="input__label-content input__label-content--kozakura" data-content="Name">Name<span class="required">*</span></span>
-            </label>
-            <svg class="graphic graphic--kozakura" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
-            <path fill="#ededed" d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"/>
-            </svg>
-            </span>
+<form id="ajax-contact" method="post" action="contact.php">
+<div class="field">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
+</div>
 
-            <span class="input input--kozakura">
-            <input class="input__field input__field--kozakura" type="text" id="input-8" name="email"/>
-            <label class="input__label input__label--kozakura" for="input-8">
-            <span class="input__label-content input__label-content--kozakura" data-content="Email">Email<span class="required">*</span></span>
-            </label>
-            <svg class="graphic graphic--kozakura" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
-            <path fill="#ededed" d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"/>
-            </svg>
-            </span>
+<div class="field">
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+</div>
 
-            <span class="input input--kozakura">
-            <input class="input__field input__field--kozakura" type="text" id="input-9" name="organization"/>
-            <label class="input__label input__label--kozakura" for="input-9">
-            <span class="input__label-content input__label-content--kozakura" data-content="Organization">Organization</span>
-            </label>
-            <svg class="graphic graphic--kozakura" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
-            <path fill="#ededed" d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"/>
-            </svg>
-            </span>
+<div class="field">
+<label for="message">Message:</label>
+<textarea id="message" name="message" required></textarea>
+</div>
 
-            <span class="input input--kozakura">
-            <input class="input__field input__field--kozakura" type="text" id="input-10" name="number"/>
-            <label class="input__label input__label--kozakura" for="input-10">
-            <span class="input__label-content input__label-content--kozakura" data-content="Phone Number">Phone Number</span>
-            </label>
-            <svg class="graphic graphic--kozakura" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
-            <path fill="#ededed" d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"/>
-            </svg>
-            </span>
+<div class="field">
+<button type="submit">Send</button>
+</div>
+</form>
 
-            <span class="input input--kozakura">
-            <textarea class="input__field input__field--kozakura" id="input-11" name="message"/></textarea>
-            <label class="input__label input__label--kozakura" for="input-11">
-            <span class="input__label-content input__label-content--kozakura" data-content="Message">Message<span class="required">*</span></span>
-            </label>
-            </svg>
-            </span> -->
-
-            <input type="submit" value="Submit">
-          </form>
           <div class="col-md-4">
             <div class="contact-information">
             <p class="white"><i class="fa fa-phone blue-text"></i> (314) 484-1242</p>
