@@ -41,22 +41,6 @@ $(window).on('scroll', function() {
   headerScroll();
 });
 
-// $('form').submit(function( e ) {
-//   e.preventDefault();
-//   e.stopPropagation();
-//
-// // TODO: make this awesome
-//   var email = {
-//     'name': $('input[name=name]').val(),
-//     'email': $('input[name=email]').val(),
-//     'organization': $('input[name=organization]').val(),
-//     'message': $('textarea[name=message]').val()
-//   };
-//
-//   $.post('contact.php', email, function( response ) {
-//     console.log(response);
-//   });
-// });
 /***********
 SEND EMAILS
 ***********/
@@ -107,6 +91,7 @@ $(form).submit(function(e) {
   });
 
 });
+
 /************
 // FOLD PANEL : AUTHOR Sebastiano Guerriero http://codyhouse.co/gem/3d-folding-panel/
 ************/

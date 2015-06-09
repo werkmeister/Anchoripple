@@ -65,7 +65,7 @@
     </div>
     <div class="container-fluid">
       <section class="contact" style="margin-top: 200px;">
-        <div class="text-center">
+        <div class="text-center header">
           <h4 class="gray">GET IN TOUCH</h4>
           <div class="header-wave dark">
             <h1 class="blue-wave-light">CONTACT ANCHORIPPLE</h1>
@@ -73,29 +73,37 @@
           <h4 class="gray">We want to talk to you and stuff.</h4>
         </div>
         <div class="row">
+          <form class="col-md-8 col-xs-12" id="ajax-contact" method="post" action="contact.php">
+            <div class="field">
+            <label for="name">Name<span class="required">*</span></label>
+            <input type="text" id="name" name="name" required>
+            </div>
 
-<form id="ajax-contact" method="post" action="contact.php">
-<div class="field">
-<label for="name">Name:</label>
-<input type="text" id="name" name="name" required>
-</div>
+            <div class="field">
+            <label for="email">Email<span class="required">*</span></label>
+            <input type="email" id="email" name="email" required>
+            </div>
 
-<div class="field">
-<label for="email">Email:</label>
-<input type="email" id="email" name="email" required>
-</div>
+            <div class="field">
+            <label for="organization">Organization</label>
+            <input type="text" id="organization" name="organization" required>
+            </div>
 
-<div class="field">
-<label for="message">Message:</label>
-<textarea id="message" name="message" required></textarea>
-</div>
+            <div class="field">
+            <label for="phone">Phone Number</label>
+            <input type="phone" id="phone" name="phone" required>
+            </div>
 
-<div class="field">
-<button type="submit">Send</button>
-</div>
-</form>
+            <div class="field">
+            <label for="message">Message<span class="required">*</span></label>
+            <textarea id="message" name="message" required></textarea>
+            </div>
 
-          <div class="col-md-4">
+            <div class="field text-center">
+            <button type="submit">Send</button>
+            </div>
+          </form>
+          <div class="col-md-4 col-xs-12">
             <div class="contact-information">
             <p class="white"><i class="fa fa-phone blue-text"></i> (314) 484-1242</p>
             <p class="white"><i class="fa fa-envelope blue-text"></i> info@anchoripple.org</p>
