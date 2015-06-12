@@ -7,7 +7,9 @@ section.aboutus {
     margin-top: 200px;
     height: 460px;
     margin-bottom: 0;
-    background-image: url('../images/background.jpg');
+    background-image: url('../images/anchoripple.jpg');
+    background-size: cover;
+    background-position: center;
     border-radius: 0;
     padding-top: 90px;
 
@@ -30,6 +32,11 @@ section.aboutus {
     .row {
       padding: 25px 0;
     }
+    @media (max-width: 820px) {
+      img {
+        width: 100%;
+      }
+    }
   }
 
   .thebottomline {
@@ -40,6 +47,10 @@ section.aboutus {
     -webkit-border-image: url(../images/ripple.darksvg) 5 round; /* Safari 3.1-5 */
     -o-border-image: url(../images/rippledark.svg) 5 round; /* Opera 11-12.1 */
     border-image: url(../images/rippledark.svg) 5 round;
+
+    @media (min-width: 820px) {
+      word-spacing: 100%;
+    }
   }
 
   .principles {
@@ -54,6 +65,11 @@ section.aboutus {
 
     h3 {
       font-family: Futura-PT-Condensed;
+    }
+
+    img {
+      border-radius: 50%;
+      width: 75%;
     }
   }
 
@@ -84,4 +100,5 @@ section.aboutus {
       border-radius: 50%
     }
   }
+
 }

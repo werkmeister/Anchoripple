@@ -29,12 +29,19 @@ section.contact {
     height: 70px;
     border: 0;
     background: $gray-base;
+    font-size: 24px;
+    padding: 10px;
+
+    &.error {
+      border: 2px solid $pink-action;
+    }
   }
 
   textarea {
     background: $gray-base;
     height: 200px;
     opacity: 1;
+    resize: vertical;
   }
 
   div.header {

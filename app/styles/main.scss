@@ -146,3 +146,23 @@ WAVE ANIMATIONS
   from {left: -48%;}
   to {left: -40%;}
 }
+
+@media (max-width: 820px) {
+  section.contact,
+  section.aboutus > div{
+    padding: 0 15px;
+  }
+
+  .ui-work-together {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .ui-waves-animation-parent {
+    .ui-waves-animation {
+      .jumbotron {
+        width: auto;
+      }
+    }
+  }
+}

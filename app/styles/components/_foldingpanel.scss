@@ -58,6 +58,7 @@ body.overflow-hidden {
 
 ul.cd-gallery {
   padding: 0;
+  margin-bottom: 50px;
 }
 
 .cd-gallery::after {
@@ -183,12 +184,18 @@ ul.cd-gallery {
 }
 @media only screen and (min-width: 820px) {
   .cd-item {
-    width: 50%;
+    width: calc(50% - 13px);
     float: left;
     height: 520px;
     -webkit-transition: -webkit-transform 0.5s 0.4s;
     -moz-transition: -moz-transform 0.5s 0.4s;
     transition: transform 0.5s 0.4s;
+  }
+  .cd-item:nth-of-type(1) {
+    margin-right: 13px;
+  }
+  .cd-item:nth-of-type(2) {
+    margin-left: 13px;
   }
   .cd-item h2 {
     // font-size: 3rem;
