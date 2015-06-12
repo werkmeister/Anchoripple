@@ -17,6 +17,7 @@ SPECIALTIES
 
   .ui-work-button {
     margin-top: 35px;
+    margin-bottom: 29px;
   }
 
   .inner-circle {
@@ -84,4 +85,20 @@ SPECIALTIES
       }
     }
   }
+  h2 {
+  margin-top: 0px;
+  }
 }
+
+/**************
+MOBILE
+**************/
+@media (max-width: 820px) {
+  .ui-specialties h2 {
+    margin-bottom: 44px;
+  }
+  h2:nth-child(3) {
+    color:
+  }
+}
+

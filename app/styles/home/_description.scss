@@ -14,3 +14,15 @@ DESCRIPTION
     line-height: 1.5em;
   }
 }
+
+/**************
+MOBILE
+**************/
+@media (max-width: 820px) {
+  h2.mission-statement.bold, 
+  .ui-description-subtext {
+    padding-right: 1.25em;
+  	padding-left: 1.25em;
+  	font-size: 1.5em;
+  }
+}

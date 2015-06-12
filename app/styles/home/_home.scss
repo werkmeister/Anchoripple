@@ -60,3 +60,19 @@ HOME
     }
   }
 }
+
+/**************
+MOBILE
+**************/
+@media (max-width: 820px) {
+  .ui-waves-animation-parent .ui-waves-animation {
+    h1 {
+    font-size: 4em;
+    }
+
+    .jumbotron {
+    padding-top: 38px;
+    margin-bottom: 60px;
+    }
+  }
+}
