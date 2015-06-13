@@ -22,10 +22,14 @@ section.work {
 }
 
 .highlight {
-  background-color: $blue-text;
-  padding: 0 13px;
+  background-color: rgba(23,86,109, .3);
+  padding: 0 16margpx;
 }
 
+.projects {
+  background-color: $gray-light;
+  padding: 0 10px;
+}
 
 /**************
 MOBILE

@@ -10,6 +10,7 @@ body.overflow-hidden {
 
 .cd-main {
   overflow-x: hidden;
+  padding-top: 22px;
 }
 .cd-main::before {
   /* never visible - this is used in jQuery to check the current MQ */
@@ -58,7 +59,7 @@ body.overflow-hidden {
 
 ul.cd-gallery {
   padding: 0;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .cd-gallery::after {
@@ -192,10 +193,10 @@ ul.cd-gallery {
     transition: transform 0.5s 0.4s;
   }
   .cd-item:nth-of-type(1) {
-    margin-right: 13px;
+    margin-right: 12px;
   }
   .cd-item:nth-of-type(2) {
-    margin-left: 13px;
+    margin-left: 12px;
   }
   .cd-item h2 {
     // font-size: 3rem;
@@ -368,13 +369,15 @@ folding panel
   width: 32px;
   left: 50%;
   top: 50%;
-  background-color: #544173;
+  background-color: $blue-text;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
+
+
 .cd-folding-panel .cd-close::after {
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
   -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);

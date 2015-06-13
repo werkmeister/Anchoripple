@@ -40,6 +40,7 @@ body {
   background: $gray-base;
   font-family: Futura-PT;
   font-size: 16px;
+  text-rendering: optimizeLegibility;
 
   h1 {
     font-size: 3em; // 48px
@@ -92,6 +93,8 @@ body {
   }
 
   p {
+    font-size: 18px;
+
     &.white {
       color: $white;
     }
@@ -164,5 +167,15 @@ WAVE ANIMATIONS
         width: auto;
       }
     }
+  }
+}
+
+/**************
+MOBILE
+**************/
+@media (max-width: 820px) {
+  .container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
