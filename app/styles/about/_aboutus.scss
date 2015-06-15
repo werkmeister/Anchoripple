@@ -36,11 +36,6 @@ section.aboutus {
     .row {
       padding: 25px 0;
     }
-    @media (max-width: 820px) {
-      img {
-        width: 300px;
-      }
-    }
   }
 
   .thebottomline {
@@ -51,10 +46,6 @@ section.aboutus {
     -webkit-border-image: url(../images/ripple.darksvg) 5 round; /* Safari 3.1-5 */
     -o-border-image: url(../images/rippledark.svg) 5 round; /* Opera 11-12.1 */
     border-image: url(../images/rippledark.svg) 5 round;
-
-    @media (min-width: 820px) {
-      word-spacing: 100%;
-    }
   }
 
   .principles {
@@ -119,26 +110,23 @@ section.aboutus {
 MOBILE
 **************/
 @media (max-width: 820px) {
-
-    section.aboutus {
-    
+  section.aboutus {
     .jumbotron {
       padding-top: 28px;
 
-    h4.gray-base {
-      font-size: 1em;
-      padding-top: 1em;
-    }
-
-    h4.white {
-      font-size: 1.5em;
-    }
-
-    h1 {
-      border: none;
-      margin-bottom: 16px; 
+      h4.gray-base {
+        font-size: 1em;
+        padding-top: 1em;
       }
+
+      h4.white {
+        font-size: 1.5em;
+      }
+
+      h1 {
+        border: none;
+        margin-bottom: 16px;
+      }
+    }
   }
 }
-}
-
