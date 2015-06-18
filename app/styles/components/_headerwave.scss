@@ -19,3 +19,15 @@ div.header-wave {
     }
   }
 }
+
+/**************
+MOBILE
+**************/
+@media (max-width: 820px) {
+  div.header-wave {
+    h1 {
+      font-size: 39px;
+    }
+  }
+}
+
