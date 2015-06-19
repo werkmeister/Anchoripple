@@ -23,7 +23,7 @@ section.work {
 
 .highlight {
   background-color: rgba(23,86,109, .3);
-  padding: 0 16margpx;
+  padding: 0 12px;
 }
 
 .projects {
@@ -39,9 +39,22 @@ section.work {
   .jumbotron {
 
     h1 {
-      font-size: 32px;
-      padding-top: 5px;
+      font-size: 27px;
+      padding-top: 0px;
     }
+
+    .highlight {
+  background-color: rgba(23,86,109, .3);
+  padding: 0 8px;
+}
+
   }
 }
+.cd-item {
+  margin-bottom: 16px;
+  img {
+  width: 260px;
+  }
+}
+
 }
