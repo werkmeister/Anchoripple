@@ -490,6 +490,12 @@ folding panel
   -webkit-transition: visibility 0s 0.4s;
   -moz-transition: visibility 0s 0.4s;
   transition: visibility 0s 0.4s;
+    h1 {
+      padding-top: 0 !important;
+    }
+    h5 {
+      font-size: 1em !important;
+    }
 }
 .cd-fold-content > * {
   opacity: 0;
@@ -598,4 +604,23 @@ Javascript disabled
   -ms-transform: translateY(0);
   -o-transform: translateY(0);
   transform: translateY(0);
+}
+
+
+@media (max-width: 820px) {
+  .cd-fold-content {
+  .backpack img {
+    width: 100% !important;
+  }
+  .text-center {
+  padding-right: 1em;
+  padding-left: 1em;
+    h1 {
+        font-size: 37px !important;
+        }
+  }
+  section {
+    padding:1.5em !important;
+    }
+  }
 }
