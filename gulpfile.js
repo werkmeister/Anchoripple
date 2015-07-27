@@ -6,6 +6,7 @@ var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
 var cache = require('gulp-cache');
 var reload = browserSync.reload;
+var pngquant = require('imagemin-pngquant');
 
 gulp.task('styles', function () {
   return gulp.src('app/styles/main.scss')
@@ -53,7 +54,8 @@ gulp.task('images', function () {
       interlaced: true,
       // don't remove IDs from SVGs, they are often used
       // as hooks for embedding and styling
-      svgoPlugins: [{cleanupIDs: false}]
+      svgoPlugins: [{cleanupIDs: false}],
+      use: [pngquant()]
     })))
     .pipe(gulp.dest('dist/images'));
 });
