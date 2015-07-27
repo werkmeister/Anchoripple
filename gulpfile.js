@@ -7,6 +7,7 @@ var browserSync = require('browser-sync');
 var cache = require('gulp-cache');
 var reload = browserSync.reload;
 var pngquant = require('imagemin-pngquant');
+var minifyCss = require('gulp-minify-css');
 
 gulp.task('styles', function () {
   return gulp.src('app/styles/main.scss')
@@ -22,8 +23,13 @@ gulp.task('styles', function () {
     ]))
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('.tmp/styles'))
-    .pipe(gulp.dest('dist/styles'))
     .pipe(reload({stream: true}));
+});
+
+gulp.task('minify-css', function() {
+  return gulp.src('.tmp/styles/*.css')
+    .pipe(minifyCss({compatibility: 'ie8'}))
+    .pipe(gulp.dest('dist/styles'));
 });
 
 gulp.task('jshint', function () {
@@ -122,7 +128,7 @@ gulp.task('wiredep', function () {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras'], function () {
+gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras', 'minify-css'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
