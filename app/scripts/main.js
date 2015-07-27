@@ -64,10 +64,10 @@ $(form).submit(function(e) {
     data: formData
   })
   .done(function() {
-
     $('.formfield').val('');
 
-    $(form + ', .thankyoumessage').toggleClass('hidden');
+    $(form).toggleClass('hidden');
+    $('.thankyoumessage').toggleClass('hidden');
   })
   .fail(function(data) {
     $.each(JSON.parse(data.responseText), function( idx, element ) {
