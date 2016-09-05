@@ -140,23 +140,29 @@ ul.cd-gallery {
   display: table-cell;
   vertical-align: middle;
 }
-.cd-item:nth-of-type(1) {
-  background-image: url(../images/backpack/pb.jpg);
+.cd-item:nth-of-type(1) { // lflg
+  background-image: url(../images/lflg/lflg-thumb.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.cd-item:nth-of-type(2) {
+.cd-item:nth-of-type(2) { // charitagoal
   background-image: url(../images/charitagoal/cg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.cd-item:nth-of-type(3) {
-  background-color: #dadcdc;
+.cd-item:nth-of-type(3) { // backpack
+  background-image: url(../images/backpack/pb.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.cd-item:nth-of-type(4) {
-  background-color: #65d29b;
+.cd-item:nth-of-type(4) { // mercy
+  background-image: url(../images/mercy/mercys-hope-thumbnail.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .cd-item h2 {
   // font-size: 2.2rem;
@@ -197,6 +203,14 @@ ul.cd-gallery {
   }
   .cd-item:nth-of-type(2) {
     margin-left: 13px;
+  }
+  .cd-item:nth-of-type(3) {
+    margin-right: 13px;
+    margin-top: 26px;
+  }
+  .cd-item:nth-of-type(4) {
+    margin-left: 13px;
+    margin-top: 26px;
   }
   .cd-item h2 {
     // font-size: 3rem;
