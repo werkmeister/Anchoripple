@@ -1,5 +1,8 @@
 .cd-fold-content{
   div.lflg {
+    img {
+      width: 100%;
+    }
 
     h1,
     h4,
@@ -9,11 +12,24 @@
     }
 
     h4 {
-      padding: 20px 0;
+      font-weight: 900;
     }
+
     h5 {
       padding-top: 70px;
     }
+
+    span.circle {
+      color: white;
+      background: $blue-wave-light;
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      text-align: center;
+      border-radius: 50%;
+      font-size: 18px;
+    }
+
     section {
       padding: 4em;
 
@@ -22,28 +38,16 @@
         top: -175px;
         margin-bottom: -175px;
         padding-top: 0;
-      }
-      &.main {
-        background: #89D3EC;
 
         img {
-          width: 49%;
+          width: 75%;
         }
       }
-      &.cash {
-        background: #F7F7F7;
 
-        img {
-          width: 32%;
-        }
+      &.research {
+        background: $gray-light;
       }
-      &.time {
-        background: #346778;
 
-        img {
-          width: 32%;
-        }
-      }
       &:last-of-type {
         margin-bottom: 4em;
       }
