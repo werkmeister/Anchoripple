@@ -1,5 +1,7 @@
 .cd-fold-content{
   div.lflg {
+    background-color: $white;
+
     img {
       width: 100%;
     }
@@ -30,6 +32,14 @@
       font-size: 18px;
     }
 
+    .original-site {
+      font-family: Futura;
+    	font-size: 18px;
+    	font-weight: 500;
+    	font-style: italic;
+    	color: $gray-text;
+    }
+
     section {
       padding: 4em;
 
@@ -42,9 +52,24 @@
         img {
           width: 75%;
         }
+
+        .original {
+          img {
+            width: 100%;
+          }
+        }
       }
 
-      &.research {
+      &.conclusion {
+        a {
+          text-decoration: underline;
+          font-size: 24px;
+          color: $blue-text;
+        }
+      }
+
+      &.research,
+      &.conclusion {
         background: $gray-light;
       }
 
